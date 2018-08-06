@@ -15,6 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
+[image10]: ./output_images/undestorted_chessboard.png "Undistorted_chessboard"
 [image1]: ./output_images/distorted_undistorted_chessboard_testImg.png "Undistorted"
 [image2]: ./output_images/Undistorted_and_WarpedImage.png "Undistorted_and_WarpedImage"
 [image3]: ./output_images/HLScolor_and_gradient_Image.png "HLScolor_and_gradient_Image"
@@ -37,7 +38,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![alt text][image1]
+![alt text][image10]
 
 ### Pipeline (single images)
 
@@ -45,13 +46,13 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 The code for this step is contained in the 4th code cell in the function `cal_undistort()` and the output is in the 6th code cell of the IPython notebook located in "./CarND-Advanced-Lane-Lines.ipynb"
 I apply the distortion correction to one of the test images like this one:
-![alt text][image2]
+![alt text][image1]
 
 #### 2. Describe how you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
 I used a combination of color and gradient thresholds to generate a binary image (thresholding steps are contained in the 9th code cell in the function `color_gradient()` and the output is in the 10th code cell of the IPython notebook located in "./CarND-Advanced-Lane-Lines.ipynb").
 I apply the distortion correction to one of the test images like this one:
-![alt text][image4]
+![alt text][image3]
 
 #### 3. Describe how you performed a perspective transform and provide an example of a transformed image.
 
@@ -79,7 +80,7 @@ This resulted in the following source and destination points:
 | 1030, 687      | 1030, 678     |
 | 275,  678      | 275,678       |
 
-![alt text][image3]
+![alt text][image4]
 
 #### 4. Describe how you identified lane-line pixels and fit their positions with a polynomial?
 
