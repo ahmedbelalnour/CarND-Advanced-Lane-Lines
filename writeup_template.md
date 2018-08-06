@@ -80,7 +80,7 @@ This resulted in the following source and destination points:
 | 1030, 687      | 1030, 678     |
 | 275,  678      | 275,678       |
 
-![alt text][image4]
+![alt text][image2]
 
 #### 4. Describe how you identified lane-line pixels and fit their positions with a polynomial?
 
