@@ -116,3 +116,11 @@ I implemented this step in 21st code cell in the function `combine_img_with_gree
 
 I implemented this step in 24th code cell in the function `process_image()` of the IPython notebook located in "./CarND-Advanced-Lane-Lines.ipynb". to be called in process video step.
 Here's a [link to my video result](./project_video.mp4)
+
+---
+
+### Discussion
+
+#### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+
+Some improvements can be added to the project like detecting the lane lines by searching from prior detections by tracking things like where the last several detections of the lane lines and what the curvature was, so we can properly treat new detections.
