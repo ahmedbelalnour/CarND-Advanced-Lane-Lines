@@ -123,4 +123,5 @@ Here's a [link to my video result](./project_video.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
+Pipeline failed to detect the lane perfectly in the hard condition like light and shadow in addition to ground color looks similar to the lane lines, I calculated the lane deviation and if it greater than an offset, I ignore this value and used the last stable value.
 Some improvements can be added to the project like detecting the lane lines by searching from prior detections by tracking things like where the last several detections of the lane lines and what the curvature was, so we can properly treat new detections.
